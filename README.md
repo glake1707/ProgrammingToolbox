@@ -1,2 +1,2 @@
 # ProgrammingToolbox
-Essential Programming tools in Java, C, and Python
+Essential programming tools in Java, C, and Python. 
