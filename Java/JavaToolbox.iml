@@ -9,6 +9,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Sorting/mergeSort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sorting/selectionSort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sorting/sorting_examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Searching/linearSearch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Searching/binarySearch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sorting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Searching" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dataStructures/DynamicArray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dataStructures/double_linked_list" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dataStructures/single_linked_list" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dataStructures/stack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dataStructures/tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dataStructures" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
