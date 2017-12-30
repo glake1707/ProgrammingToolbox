@@ -58,12 +58,14 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
                 for (int i = 0; i < this.size; i++) {
                     array[i] = temp[i];
                 }
+                this.size *= 2;
             } else if (this.size < array.length / 3) {
                 Object[] temp = array;
                 array = new Object[this.size / 3];
                 for (int i = 0; i < this.size; i++) {
                     array[i] = temp[i];
                 }
+                this.size /= 3;
             }
         }
 
@@ -72,12 +74,38 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
                 array[this.size] = e;
             } else {
                 resizeArray();
+                append(e);
             }
         }
 
         public void prepend(E e) {
             if (this.size < array.length) {
-
+                for (int i = 0; i < this.size; i++) {
+                    array[this.size - i + 1] = array[this.size - i];
+                }
+                array[0] = e;
+                this.size++;
+            } else {
+                resizeArray();
+                prepend(e);
             }
         }
+
+        public void insert(int index, E e) {
+        if (this.size < array.length) {
+                for (int i = this.size - 1; i >= index; i--) {
+                    array[i + 1] = array[i];
+                }
+                array[index] = e;
+                this.size++;
+            } else {
+                resizeArray();
+                insert(index, e);
+            }
+        }
+
+        public boolean delete(E e) {
+            return true;
+        }
+
 }

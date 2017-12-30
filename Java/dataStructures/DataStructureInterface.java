@@ -6,11 +6,11 @@ public interface DataStructureInterface<E> {
     //may have to use BigInteger and others to make primitive types into object
 
     public void append(E e); //appends the object to the data structure
-    //public void insert(int index, E e); inserts the object at index
-    //public void prepend(E e); //prepends the object to the data structure
+    public void insert(int index, E e); //inserts the object at index
+    public void prepend(E e); //prepends the object to the data structure
     //public E getValue(int index); //returns the object at the specified index
     //public void deleteByIndex(int index); deletes the object at index
-    //public boolean delete(E e); //deletes all instances of specified object, returns false if no instances exist
+    public boolean delete(E e); //deletes all instances of specified object, returns false if no instances exist
     //public void clear(); //clear the contents and resizes the structure to a default size
     //public <T> T[] toArray(T[] t); returns an array containing the objects in the structure
     public int indexOf(E e); // returns the index of the first element
