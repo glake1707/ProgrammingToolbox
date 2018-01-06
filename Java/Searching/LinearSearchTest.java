@@ -12,6 +12,26 @@ public class LinearSearchTest {
         ls = new LinearSearch();
     }
 
+    @Test (timeout = 1000)
+    public void testNoElementInList() {
+        int[] list = {1, -3, 4, 2, 4, -2};
+        int target = 7;
+        int[] expected = {-1};
+        int[] actual = ls.search(list, target);
+        String message = "search(int[] list, int target): test search with element not in list";
+        assertArrayEquals(message, actual, expected);
+    }
+
+    @Test (timeout = 1000)
+    public void testEmptyList() {
+        int[] list = {};
+        int target = 7;
+        int[] expected = {-1};
+        int[] actual = ls.search(list, target);
+        String message = "search(int[] list, int target): test search on an empty list";
+        assertArrayEquals(message, actual, expected);
+    }
+
     @Test(timeout = 1000)
     public void testSingleElementList() {
         int[] list = {10};
