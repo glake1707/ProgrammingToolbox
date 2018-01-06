@@ -89,7 +89,7 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
         public void prepend(E e) {
             if (this.size < array.length) {
                 for (int i = 0; i < this.size; i++) {
-                    array[this.size - i + 1] = array[this.size - i];
+                    array[this.size - i] = array[this.size - i - 1];
                 }
                 array[0] = e;
                 this.size++;

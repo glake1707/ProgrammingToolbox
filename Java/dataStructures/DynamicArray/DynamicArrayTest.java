@@ -12,6 +12,14 @@ public class DynamicArrayTest {
         list = new DynamicArray<String>(5);
     }
 
+    public void printArray() {
+        int i = 0;
+        while (list.getElement(i) != null) {
+            System.out.println(list.getElement(i));
+            i++;
+        }
+    }
+
     @Test (timeout = 1000)
     public void testContructor() {
         int length = list.getLength();
@@ -105,4 +113,20 @@ public class DynamicArrayTest {
         }
     }
 
+    @Test (timeout = 1000)
+    public void testPrepend() {
+        list.clear();
+        for (int i = 0; i < 8; i++) {
+            list.prepend("a" + i);
+        }
+
+        assertTrue(list.getLength() == 10);
+        assertTrue(list.getSize() == 8);
+        String expected = "a7";
+        String actual = list.getElement(0);
+        String message = "test prepend() should insert new elements at index 0";
+        assertEquals(message, expected, actual);
+        assertTrue(list.getElement(7).equals("a0"));
+    }
 }
+
