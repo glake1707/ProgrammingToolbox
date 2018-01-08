@@ -32,7 +32,9 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
 
         public boolean contains(Object o) {
             for (int i = 0; i < array.length; i++) {
-                if(array[i].equals(o)) return true;
+                if (o != null && array[i] != null) {
+                    if (array[i].equals(o)) return true;
+                }
             }
             return false;
         }
@@ -46,15 +48,23 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
             return -1;
         }
         public int[] indexOfs(E e) {
-            int size = 0;
+            int size = 1;
             int[] indices = new int[size];
             if (!contains(e)) {
                 indices[0] = -1;
                 return indices;
             }
-            for (int i = 0; i < array.length; i++) {
+            size = 0;
+            for (int i = 0; i < this.size; i++) {
                 if (array[i].equals(e)) {
-                    indices[++size] = i;
+                    size++;
+                }
+            }
+            indices = new int[size];
+            int j = 0;
+            for (int i = 0; i < this.size; i++) {
+                if (array[i].equals(e)) {
+                    indices[j++] = i;
                 }
             }
             return indices;
@@ -117,7 +127,7 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
         public void delete(E e) {
             if (contains(e)) {
                 for (int i = 0; i < this.size; i++) {
-                    if (array[i].equals(e)) {
+                    if (((E)array[i]).equals(e)) {
                         deleteByIndex(i);
                     }
                 }
@@ -126,9 +136,21 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
 
         public void deleteByIndex(int index) throws IllegalArgumentException {
             if (index >= 0 && index < this.size) {
-                for (int i = index + 1; i < this.size; i++) {
-                    array[i-1] = array[i];
+                if (index == (this.size - 1)) {
+                    array[index] = null;
+                } else {
+                    if (this.size == array.length) {
+                        for (int i = index; i < this.size - 1; i++) {
+                            array[i] = array[i + 1];
+                        }
+                        array[this.size] = null;
+                    } else {
+                        for (int i = index; i < this.size; i++) {
+                            array[i] = array[i + 1];
+                        }
+                    }
                 }
+                //array[this.size] = null;
                 this.size--;
                 resizeArray();
             } else {
@@ -137,28 +159,52 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
         }
 
         public E getElement(int index) {
-            return (E)array[index];
+            if (index >= 0 && index < this.size) {
+                return (E)array[index];
+            }
+            return null;
         }
 
         public void clear() {
             array = new Object[this.initialCapacity];
+            this.size = 0;
         }
 
         public void clearBetween(int a, int b) {
-            Object[] temp1 = new Object[a];
-            Object[] temp2 = new Object[this.size - b];
-            for (int i = 0; i <= a; i++) {
-                temp1[i] = array[i];
+            if (a < 0) {
+                a = 0;
+            } else if (b > this.size - 1) {
+                b = this.size - 1;
+            } else if (b < a) {
+                int i = b;
+                b = a;
+                a = i;
             }
-            for (int i = b+1; i < this.size; i++) {
-                temp2[i] = array[i];
-            }
-
-            for (int i = 0; i < a + this.size - b; i++) {
-                if (i < temp1.length) {
-                    array[i] = temp1[i];
-                } else if (i >= temp1.length) {
-                    array[i] = temp2[i];
+            if (b >= this.size && a == 0) {
+                clear();
+            } else if (a == b) {
+                deleteByIndex(a);
+            } else if (a == 0) {
+                Object[] temp1 = new Object[this.size - b];
+                int j = 0;
+                for (int i = 1; i < this.size - b; i++) {
+                    temp1[j++] = array[b + i];
+                }
+                array = temp1;
+                this.size = this.size - b;
+            } else if ( b == this.size - 1) {
+                Object[] temp2 = new Object[a];
+                for (int i = 0; i < a; i++) {
+                    temp2[i] = array[i];
+                }
+                array = temp2;
+                this.size = a;
+            } else if ((b - a) == 1) {
+                deleteByIndex(a);
+                deleteByIndex(a);
+            } else {
+                for (int i = 0; i <= b - a; i++) {
+                    deleteByIndex(a);
                 }
             }
             resizeArray();
@@ -180,22 +226,5 @@ public class DynamicArray<E> implements DataStructureInterface<E> {
 
                 }
             return t;
-        }
-
-    public static void printArray(Object[] arr) {
-        System.out.print("{ ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.printf("%d ", (int)arr[i]);
-        }
-        System.out.print("}\n");
-    }
-
-        public static void main(String[] args) {
-            DynamicArray<String> arr = new DynamicArray<String>(10);
-            arr.append("1");
-            String array[] = new String[1];
-            array = arr.toArray(array);
-            printArray(array);
-
         }
 }

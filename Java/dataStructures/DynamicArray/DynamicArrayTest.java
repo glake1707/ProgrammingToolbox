@@ -95,6 +95,17 @@ public class DynamicArrayTest {
         assertTrue(list.getElement(2) == null);
         assertTrue(list.getSize() == 2);
         assertTrue(list.getLength() == 3);
+        list.clear();
+        for(int i = 0; i < 12; i++) { //{a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10,a11}
+            list.append("a" + i);
+        }
+
+        list.deleteByIndex(3);
+        list.deleteByIndex(3);
+        list.deleteByIndex(3);
+        String[] expected = {"a0", "a1", "a2", "a6"};
+        //printArray();
+
     }
 
     @Test (timeout = 1000)
@@ -127,6 +138,105 @@ public class DynamicArrayTest {
         String message = "test prepend() should insert new elements at index 0";
         assertEquals(message, expected, actual);
         assertTrue(list.getElement(7).equals("a0"));
+    }
+
+    @Test (timeout = 1000)
+    public void testInsertBeginningMiddleEnd() {
+        list.clear();
+        for(int i = 0; i < 7; i++) {
+            list.append("a" + i);
+        }
+        list.insert(0,"0");
+        list.insert(3,"1");
+        list.insert(9,"2");
+
+        assertTrue(list.getElement(0).equals("0"));
+        assertTrue(list.getElement(3).equals("1"));
+        assertTrue(list.getElement(9).equals("2"));
+    }
+
+    @Test(timeout = 1000)
+    public void testDeleteSingleMultiple() {
+        list.clear();
+        for(int i = 0; i < 7; i++) {
+            list.append("a" + i);
+        }
+
+        list.append("0");
+        list.delete("0");
+        assertFalse(list.contains("0"));
+        list.append("0");
+        list.prepend("0");
+        list.insert(3, "0");
+        list.delete("0");
+        assertFalse(list.contains("0"));
+    }
+
+    @Test (timeout = 1000)
+    public void testindexOf() {
+        list.clear();
+        for(int i = 0; i < 12; i++) {
+            list.append("a" + i);
+        }
+        assertTrue(list.indexOf("a4") == 4);
+        assertTrue(list.indexOf("a11") == 11);
+    }
+
+    @Test (timeout = 1000)
+    public void testIndexOfs() {
+        list.clear();
+        for(int i = 0; i < 12; i++) {
+            list.append("a" + i);
+        }
+
+        list.insert(0, "0");
+        list.insert(5, "0");
+        list.insert(6, "0");
+        list.insert(11, "0");
+        int[] ind = list.indexOfs("0");
+        int[] expected = {0,5,6,11};
+        assertArrayEquals(expected, ind);
+        int[] expected2 = {-1};
+        int[] i = list.indexOfs("k");
+        assertArrayEquals(expected2, i);
+    }
+
+    @Test (timeout = 1000)
+    public void testClearBetween() {
+        list.clear();
+        for(int i = 0; i < 12; i++) { //{a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10,a11}
+            list.append("a" + i);
+        }
+        list.clearBetween(0, 3);
+        String[] expected = {"a4", "a5", "a6", "a7", "a8", "a9", "a10", "a11"};
+        assertTrue(list.getElement(0).equals("a4"));
+        assertTrue(list.getElement(7).equals("a11"));
+
+        list.clear();
+        for(int i = 0; i < 12; i++) { //{a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10,a11}
+            list.append("a" + i);
+        }
+        list.clearBetween(9, 5);
+        String[] expected2 = {"a0", "a1", "a2", "a3", "a4", "a10", "a11"};
+        String[] actual = new String[list.getSize()];
+        actual = list.toArray(actual);
+        assertArrayEquals(expected2, actual);
+    }
+
+    @Test (timeout = 1000)
+    public void testToArray() {
+        list.clear();
+        for(int i = 0; i < 5; i++) { //{a0, a1, a2, a3, a4}
+            list.append("a" + i);
+        }
+
+        String[] arr = new String[5];
+        arr = list.toArray(arr);
+        String[] expected = {"a0", "a1", "a2", "a3", "a4"};
+        assertArrayEquals(expected, arr);
+
+
+
     }
 }
 

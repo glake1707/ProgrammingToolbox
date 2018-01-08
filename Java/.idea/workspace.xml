@@ -26,18 +26,13 @@
       <file leaf-file-name="DynamicArray.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="90" column="30" lean-forward="false" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+            <state relative-caret-position="210">
+              <caret line="228" column="9" lean-forward="false" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
               <folding>
                 <element signature="e#571#572#0" expanded="true" />
                 <element signature="e#611#612#0" expanded="true" />
                 <element signature="e#644#645#0" expanded="true" />
                 <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#4133#4134#0" expanded="true" />
-                <element signature="e#4179#4180#0" expanded="true" />
-                <element signature="e#4210#4211#0" expanded="true" />
-                <element signature="e#4274#4275#0" expanded="true" />
-                <element signature="e#5879#5887#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +73,8 @@
       <file leaf-file-name="DynamicArrayTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="121" column="8" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+            <state relative-caret-position="30">
+              <caret line="222" column="45" lean-forward="true" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -580,34 +575,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 44m 27s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 04m 46s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 44m 53s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 05m 02s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 45m 17s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 05m 49s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 45m 30s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 06m 14s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 46m 27s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 06m 43s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 46m 47s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 07m 01s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 47m 08s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 09m 13s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 47m 42s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 10m 05s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 49m 44s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 12m 29s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DynamicArrayTest - 2018.01.06 at 17h 50m 17s.xml">
+    <history-entry file="DynamicArrayTest - 2018.01.08 at 17h 14m 56s.xml">
       <configuration name="DynamicArrayTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -624,7 +619,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30709878" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41358024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -680,7 +675,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -745,11 +740,6 @@
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#644#645#0" expanded="true" />
             <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#4133#4134#0" expanded="true" />
-            <element signature="e#4179#4180#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#5879#5887#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,11 +800,6 @@
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#644#645#0" expanded="true" />
             <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#4133#4134#0" expanded="true" />
-            <element signature="e#4179#4180#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#5879#5887#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -828,11 +813,6 @@
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#644#645#0" expanded="true" />
             <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#4133#4134#0" expanded="true" />
-            <element signature="e#4179#4180#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#5879#5887#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -867,11 +847,6 @@
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#644#645#0" expanded="true" />
             <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#4133#4134#0" expanded="true" />
-            <element signature="e#4179#4180#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#5879#5887#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1061,8 +1036,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="121" column="8" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        <state relative-caret-position="30">
+          <caret line="222" column="45" lean-forward="true" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1074,18 +1049,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="90" column="30" lean-forward="false" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="228" column="9" lean-forward="false" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
           <folding>
             <element signature="e#571#572#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#644#645#0" expanded="true" />
             <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#4133#4134#0" expanded="true" />
-            <element signature="e#4179#4180#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#5879#5887#0" expanded="true" />
           </folding>
         </state>
       </provider>
