@@ -13,8 +13,7 @@ public class LinearSearch extends Search {
         int index = 0;
         for (int i = 0; i < list.length; i++) {
             if (list[i] == target) {
-                temp[index] = i;
-                index++;
+                temp[index++] = i;
             }
         }
         int[] result = {-1};
