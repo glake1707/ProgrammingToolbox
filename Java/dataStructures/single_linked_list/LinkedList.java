@@ -55,6 +55,7 @@ public class LinkedList<E> {
         Node<E> temp = new Node<E>();
         temp.value = e;
         temp.next = head;
+        head = temp;
         this.size++;
     }
 
@@ -62,10 +63,11 @@ public class LinkedList<E> {
         if (head == null) {
             return;
         } else if (head.next == null) {
-            head = null;
+            clear();
+            return;
         }
-        Node t = head.next;
-        while(t.next != null) {
+        Node t = head;
+        while(t.next.next != null) {
             t = t.next;
         }
         t.next = null;
