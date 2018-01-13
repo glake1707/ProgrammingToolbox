@@ -183,6 +183,7 @@ public class LinkedList<E> {
         while (t.next != null) {
             if (t.next.value.equals(e)) {
                 t.next = t.next.next;
+                this.size--;
             }
             t = t.next;
         }
@@ -204,6 +205,42 @@ public class LinkedList<E> {
             current = current.next;
         }
         return t;
+    }
 
+    public boolean isEmpty() {
+        if (head == null) {
+            return true;
+        } else {
+            for (Node t = head; t.next != null; t = t.next) {
+                if (t.value != null) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public void deleteByIndex(int index) {
+        if (head == null) {
+            return;
+        } else if (index < 0 || index > getSize()) {
+            return;
+        } else {
+            if (index == 1) {
+                deleteFirst();
+                return;
+            } else if (index == getSize() - 1) {
+                deleteLast();
+                return;
+            }
+            int i = 0;
+            for (Node t = head; t.next != null; t = t.next) {
+                if (index == i) {
+                    t.next = t.next.next;
+                    this.size--;
+                    return;
+                }
+            }
+        }
     }
 }

@@ -149,7 +149,11 @@ public class LinkedListTest {
         list.insert(7, "a4");
         list.insert(3, "a4");
         list.delete("a4");
-
-
+        String[] expected = {"a1", "a2", "a3", "a5", "a6", "a7", "a8"};
+        String message = "test delete(): delete multiple";
+        String[] actual = new String[7];
+        actual = list.toArray(actual);
+        assertArrayEquals(message, expected, actual);
     }
+
 }
