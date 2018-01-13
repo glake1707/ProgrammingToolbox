@@ -74,6 +74,14 @@ public class LinkedList<E> {
         this.size--;
     }
 
+    public void deleteFirst() {
+        if (head == null) {
+            return;
+        }
+        head = head.next;
+        this.size--;
+    }
+
     public boolean contains(Object o) {
         Node t = head;
         while(t !=  null) {
@@ -89,7 +97,7 @@ public class LinkedList<E> {
         return (E)head.value;
     }
 
-    public E getIndex(int index) {
+    public E getElement(int index) {
         if (head == null) {
             return null;
         }
@@ -149,5 +157,53 @@ public class LinkedList<E> {
         temp.next = t.next;
         t.next = temp;
         this.size++;
+    }
+
+    public void delete(E e) {
+        if (head == null) {
+            return;
+        } else if (!contains(e)) {
+            return;
+        }
+        if (getSize() == 1) {
+            clear();
+            return;
+        }
+
+
+        if (getFirst().equals(e)) {
+            deleteFirst();
+            delete(e);
+        }
+        if (getLast().equals(e)) {
+            deleteLast();
+            delete(e);
+        }
+        Node t = head;
+        while (t.next != null) {
+            if (t.next.value.equals(e)) {
+                t.next = t.next.next;
+            }
+            t = t.next;
+        }
+    }
+
+    public <T> T[] toArray(T[] t) {
+        if (t == null) {
+            throw new NullPointerException();
+        }
+        if (t.length < getSize()) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        Node current = head;
+        int i = 0;
+        while (current != null) {
+            t[i] = (T)current.value;
+            i++;
+            current = current.next;
+        }
+        return t;
+
     }
 }

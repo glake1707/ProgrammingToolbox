@@ -32,6 +32,19 @@ public class LinkedListTest {
     }
 
     @Test (timeout = 1000)
+    public void testContains() {
+        list.clear();
+        for (int i = 0; i < 10; i++) {
+            list.append("a" + i);
+        }
+
+        assertTrue(list.contains("a0"));
+        assertFalse(list.contains("a"));
+        assertTrue(list.contains("a9"));
+        assertTrue(list.contains("a4"));
+    }
+
+    @Test (timeout = 1000)
     public void testPrepend() {
         list.clear();
         for (int i = 0; i < 10; i++) {
@@ -79,7 +92,64 @@ public class LinkedListTest {
             list.append("a" + i);
         }
         list.insert(4, "b4");
-        assertTrue(list.getIndex(4).equals("b4"));
+        assertTrue(list.getElement(4).equals("b4"));
     }
 
+    @Test (timeout = 1000)
+    public void testDeleteFirst() {
+        list.clear();
+        for (int i = 0; i < 10; i++) {
+            list.append("a" + i);
+        }
+        list.deleteFirst();
+        list.deleteFirst();
+        assertTrue(list.getFirst().equals("a2"));
+        assertTrue(list.getSize() == 8);
+    }
+
+    @Test (timeout = 1000)
+    public void testToArray() {
+        list.clear();
+        for (int i = 0; i < 10; i++) {
+            list.append("a" + i);
+        }
+        String[] array = new String[8];
+        try {
+            array = list.toArray(array);
+        } catch (IndexOutOfBoundsException e) {
+            assertTrue(true);
+        }
+        String[] actual = new String[10];
+        actual = list.toArray(actual);
+
+        String message = "test toArray(t[] t): 10 element array";
+        String[] expected = {"a0", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9"};
+        assertArrayEquals(message, expected, actual);
+    }
+
+    @Test (timeout = 1000)
+    public void testDelete() {
+        list.clear();
+        list.append("a0");
+        list.delete("a1");
+        assertTrue(list.getElement(0).equals("a0"));
+        list.delete("a0");
+        assertTrue(list.getElement(0) == null);
+        for (int i = 0; i < 10; i++) {
+            list.append("a" + i);
+        }
+
+        list.delete("a0");
+        assertTrue(list.getFirst().equals("a1"));
+        list.delete("a9");
+        assertTrue(list.getLast().equals("a8"));
+        list.delete("a4");
+
+        list.insert(4, "a4");
+        list.insert(7, "a4");
+        list.insert(3, "a4");
+        list.delete("a4");
+
+
+    }
 }
