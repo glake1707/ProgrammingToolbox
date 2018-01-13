@@ -26,14 +26,9 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataStructures/single_linked_list/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-              <folding>
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#1782#1783#0" expanded="true" />
-                <element signature="e#1818#1819#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="224">
+              <caret line="106" column="33" lean-forward="false" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,13 +36,11 @@
       <file leaf-file-name="LinkedListTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataStructures/single_linked_list/LinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            <state relative-caret-position="264">
+              <caret line="81" column="50" lean-forward="true" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +49,7 @@
       <file leaf-file-name="DynamicArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
+            <state relative-caret-position="4480">
               <caret line="228" column="9" lean-forward="false" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
               <folding>
                 <element signature="e#571#572#0" expanded="true" />
@@ -71,7 +64,7 @@
       <file leaf-file-name="DynamicArrayTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="20">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="33" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -152,6 +145,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -216,9 +212,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -588,34 +581,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 14m 28s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 36m 56s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 15m 36s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 38m 33s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 16m 04s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 39m 29s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 18m 07s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 40m 43s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 20m 07s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 42m 00s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 21m 36s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 42m 46s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 22m 33s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 48m 36s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 23m 58s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 57m 32s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 30m 44s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 58m 09s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListTest - 2018.01.12 at 16h 31m 14s.xml">
+    <history-entry file="LinkedListTest - 2018.01.13 at 11h 58m 39s.xml">
       <configuration name="LinkedListTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -638,8 +631,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28525898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29003984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -651,6 +643,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -701,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,9 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,23 +999,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataStructures/single_linked_list/DataStructureInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataStructures/single_linked_list/DataStructureInterface.java" />
     <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="20">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="33" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1044,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataStructures/DynamicArray/DynamicArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
+        <state relative-caret-position="4480">
           <caret line="228" column="9" lean-forward="false" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
           <folding>
             <element signature="e#571#572#0" expanded="true" />
@@ -1065,26 +1039,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataStructures/single_linked_list/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-          <folding>
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
-            <element signature="e#1818#1819#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="224">
+          <caret line="106" column="33" lean-forward="false" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataStructures/single_linked_list/LinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        <state relative-caret-position="264">
+          <caret line="81" column="50" lean-forward="true" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
           </folding>
         </state>
       </provider>

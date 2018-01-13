@@ -59,4 +59,27 @@ public class LinkedListTest {
         assertTrue(list.getLast().equals("a7"));
     }
 
+    @Test (timeout = 1000)
+    public void testInsert() {
+        list.clear();
+        try {
+            list.insert(3, "a0");
+        } catch (IndexOutOfBoundsException in) {
+            assertTrue(true);
+        }
+
+        list.insert(0, "a0");
+        assertTrue(list.getLast().equals("a0"));
+
+        list.insert(1, "a1");
+        assertTrue(list.getLast().equals("a1"));
+
+        list.clear();
+        for (int i = 0; i < 10; i++) {
+            list.append("a" + i);
+        }
+        list.insert(4, "b4");
+        assertTrue(list.getIndex(4).equals("b4"));
+    }
+
 }

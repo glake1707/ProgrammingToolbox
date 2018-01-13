@@ -89,6 +89,27 @@ public class LinkedList<E> {
         return (E)head.value;
     }
 
+    public E getIndex(int index) {
+        if (head == null) {
+            return null;
+        }
+        if (index < 0 || index >= getSize()) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (index == 0) {
+            return getFirst();
+        }
+        if (index == getSize() - 1) {
+            return getLast();
+        }
+
+        Node t = head;
+        for (int i = 0; i < index; i++) {
+            t = t.next;
+        }
+        return (E)t.value;
+    }
+
     public E getLast() {
         if (head == null) {
             return null;
@@ -101,5 +122,32 @@ public class LinkedList<E> {
             }
             return (E)t.value;
         }
+    }
+
+    public void insert(int index, E e) {
+        if (index < 0 || index > getSize()) {
+            throw new IndexOutOfBoundsException();
+        }
+        if(head == null) {
+            prepend(e);
+        }
+        Node<E> temp = new Node<>();
+        temp.value = e;
+
+        if (index == getSize() - 1) {
+            append(e);
+            return;
+        }
+        if (index == 0) {
+            prepend(e);
+            return;
+        }
+        Node t = head;
+        for (int i = 0; i < index - 1; i++ ) {
+            t = t.next;
+        }
+        temp.next = t.next;
+        t.next = temp;
+        this.size++;
     }
 }
