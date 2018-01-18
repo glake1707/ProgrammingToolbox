@@ -2,8 +2,6 @@
  * Created by gabriel on 7/23/17.
  */
 public interface DataStructureInterface<E> {
-    //use java generic types to make it work on objects and primitive types
-    //may have to use BigInteger and others to make primitive types into object
 
     public void append(E e); //appends the object to the data structure
     public void insert(int index, E e); //inserts the object at index

@@ -156,4 +156,28 @@ public class LinkedListTest {
         assertArrayEquals(message, expected, actual);
     }
 
+    @Test (timeout = 1000)
+    public void testDeleteByIndex() {
+        list.clear();
+        for (int i = 0; i < 5; i++) {
+            list.append("a" + i);
+        }
+
+        String[] expected = {"a0", "a1", "a2", "a3"};
+        String[] expected2= {"a1", "a2", "a3", "a4"};
+        String[] expected3 = {"a0", "a1", "a3", "a4"};
+        String message = "testDeleteByIndex";
+        String[] actual = new String[4];
+
+        list.deleteByIndex(4);
+        assertArrayEquals(message, expected, list.toArray(actual));
+        list.insert(4, "a4");
+        list.deleteByIndex(0);
+        assertArrayEquals(message, expected2, list.toArray(actual));
+        list.insert(0, "a0");
+        list.deleteByIndex(2);
+        list.printList();
+        assertArrayEquals(message, expected3, list.toArray(actual));
+
+    }
 }

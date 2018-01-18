@@ -226,7 +226,7 @@ public class LinkedList<E> {
         } else if (index < 0 || index > getSize()) {
             return;
         } else {
-            if (index == 1) {
+            if (index == 0) {
                 deleteFirst();
                 return;
             } else if (index == getSize() - 1) {
@@ -235,12 +235,14 @@ public class LinkedList<E> {
             }
             int i = 0;
             for (Node t = head; t.next != null; t = t.next) {
-                if (index == i) {
+                if (index-1 == i) {
                     t.next = t.next.next;
                     this.size--;
                     return;
                 }
+                i++;
             }
         }
     }
+
 }
