@@ -48,6 +48,27 @@ public class BinarySearchTree<E extends Comparable<E>> {
         }
     }
 
+    public void printInOrder(Node current) {
+        if (current != null) {
+            printInOrder(current.left);
+            System.out.println("" + current.value);
+            printInOrder(current.right);
+        }
+    }
+
+    public void delete() {
+
+    }
+
+    public <T> T[] preOrderArray(T[] t) {
+
+    }
+
+    public <T> T[] inOrderArray(T[] t) {
+
+    }
+
+
     public static void main(String[] args) {
         BinarySearchTree<Integer> bst = new BinarySearchTree<>();
         bst.insert(bst.root, 10);
@@ -56,8 +77,15 @@ public class BinarySearchTree<E extends Comparable<E>> {
         bst.insert(bst.root, 15);
         bst.insert(bst.root, 4);
         bst.insert(bst.root, 6);
-        bst.insert(bst.root, 12);bst.insert(bst.root, 11);
+        bst.insert(bst.root, 12);
+        bst.insert(bst.root, 11);
+        bst.printPreOrder(bst.root);
+        bst.printInOrder(bst.root);
+        bst.clear();
+        bst.printInOrder(bst.root);
+        bst.insert(bst.root, 0);
         bst.printPreOrder(bst.root);
     }
+
 
 }
